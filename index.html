@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <base href="/">
+
+        <title> Clean Blog </title>
+
+        <link type="text/css" rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="assets/css/template.css">
+
+        <!-- Vendor:build:start -->
+            <!-- <script type="text/javascript" src="assets/vendor/jquery/jquery.min.js"></script> -->
+        <!-- Vendor:build:end -->
+
+        <!-- AngularJS:build:start -->
+        <script type="text/javascript" src="assets/vendor/angular/angular.min.js" defer></script>
+        <script type="text/javascript" src="assets/vendor/angular/angular-route.min.js" defer></script>
+        <!-- AngularJS:build:end -->
+
+        <!-- AngularJS:core:start -->
+        <script type="text/javascript" src="app/app-core.js" defer></script>
+        <script type="text/javascript" src="app/app-routes.js" defer></script>
+        <script type="text/javascript" src="app/app.js" defer></script>
+        <!-- AngularJS:core:end -->
+
+        <!-- AngularJS:services:start -->
+
+            <!-- AngularJS:services:start -->
+            <script type="text/javascript" src="app/services/User.js" defer></script>
+            <!-- AngularJS:services:stop -->
+
+        <!-- AngularJS:services:end -->
+
+        <!-- AngularJS:controllers:start -->
+
+            <!-- AngularJS:controllers:templates-parts:start -->
+            <script type="text/javascript" src="app/templates-parts/header/directive.js" defer></script>
+            <!-- AngularJS:controllers:templates-parts:stop -->
+
+            <!-- AngularJS:controllers:templates:start -->
+            <script type="text/javascript" src="app/templates/login/controller.js" defer></script>
+            <script type="text/javascript" src="app/templates/logout/controller.js" defer></script>
+            <script type="text/javascript" src="app/templates/register/controller.js" defer></script>
+            <script type="text/javascript" src="app/templates/error/controller.js" defer></script>
+            <script type="text/javascript" src="app/templates/home/controller.js" defer></script>
+            <script type="text/javascript" src="app/templates/blog/controller.js" defer></script>
+            <script type="text/javascript" src="app/templates/dashboard/controller.js" defer></script>
+            <script type="text/javascript" src="app/templates/contact/controller.js" defer></script>
+            <!-- AngularJS:controllers:template:stop -->
+
+        <!-- AngularJS:controllers:end -->
+
+    </head>
+    <body ng-app="app">
+
+        <header></header>
+
+        <main ng-view>
+            <section> Chargement d'angular en cours </section>
+        </main>
+
+        <footer></footer>
+
+    </body>
+</html>
